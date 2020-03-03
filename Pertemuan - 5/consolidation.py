@@ -1,18 +1,14 @@
-def main():
-    data = [None]
-    data = input().split()
-    listOfNumber = list(map(int, data))
+data = input().split()
+listOfNumber = list(map(int, data))
 
-    numbers = {}
-    for number in listOfNumber:
-        try:
-            numbers[number].append(number)
-        except:
-            numbers[number] = []
-            numbers[number].append(number)
+key = listOfNumber[0]
+num = 0
+for number in listOfNumber:
+    if key == number:
+        num += 1
+    else:
+        print(f'{key}: {num}')
+        key = number
+        num = 1
+print(f'{key}: {num}')
 
-    for val in numbers:
-        print(f"{val}: {len(numbers[val])}")
-
-if __name__ == "__main__":
-    main()

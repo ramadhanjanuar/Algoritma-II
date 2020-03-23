@@ -3,7 +3,7 @@ def main():
     data = [None] * numberOfSizeData
     data = input().split()
 
-    numberOfSizeDataSearching = int(input()) 
+    numberOfSizeDataSearching = int(input())
     dataSearching = [None] * numberOfSizeDataSearching
     dataSearching = input().split()
 

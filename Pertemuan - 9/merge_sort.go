@@ -48,8 +48,6 @@ func merge(a *[]int, p int, q int, r int) {
 		k--
 		arr[i] = b[k]
 	}
-
-	*a = arr
 } 
 
 // MergeSort for merge sort

@@ -23,8 +23,6 @@ func swap(arr *[]int, firstIndex int, secondIndex int) {
 
 	tempArray[firstIndex] = tempArray[secondIndex]
 	tempArray[secondIndex] = temp
-
-	*arr = tempArray
 }
 
 func indexOfMinimum(arr *[]int, startIndex int, n int) int {

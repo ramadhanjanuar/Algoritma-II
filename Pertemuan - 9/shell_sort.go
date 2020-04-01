@@ -29,5 +29,4 @@ func ShellSort(arr *[]int, n int) {
 			tempArray[j] = temp
 		}
 	}
-	*arr = tempArray
 }
